@@ -20,9 +20,9 @@ To use the Oxymeter Service, follow these steps:
 
 
 ### Usefull commands
-sudo journalctl -u oxymeter.service
-sudo systemctl daemon-reload 
-sudo systemctl status oxymeter.service
-sudo systemctl restart oxymeter.service
-sudo nano /etc/systemd/system/oxymeter.service 
+1. sudo journalctl -u oxymeter.service
+2. sudo systemctl daemon-reload 
+3. sudo systemctl status oxymeter.service
+4. sudo systemctl restart oxymeter.service
+5. sudo nano /etc/systemd/system/oxymeter.service 
 
