@@ -26,3 +26,4 @@ To use the Oxymeter Service, follow these steps:
 4. sudo systemctl restart oxymeter.service
 5. sudo nano /etc/systemd/system/oxymeter.service 
 
+![Finger Pulse](finger_pulse.PNG)
