@@ -25,15 +25,15 @@ https://www.aliexpress.com/item/1005003621450506.html?spm=a2g0o.order_list.order
 
 To use the Oxymeter Service, follow these steps:
 
-$ pip install -r requirements.txt
-$ sudo apt-get install python-pip libglib2.0-dev
-$ sudo pip install bluepy
-$ sudo pip install paho-mqtt
-$ sudo pip install adafruit-circuitpython-charlcd
-$ mv /home/toon/oxymeter_service/org_oxymeter.service /etc/systemd/system/oxymeter.service
-$ sudo systemctl enable oxymeter.service
-$ sudo systemctl daemon-reload
-$ sudo reboot now
+$ pip install -r requirements.txt \\
+$ sudo apt-get install python-pip libglib2.0-dev \\
+$ sudo pip install bluepy \\ 
+$ sudo pip install paho-mqtt \\ 
+$ sudo pip install adafruit-circuitpython-charlcd \\ 
+$ mv /home/toon/oxymeter_service/org_oxymeter.service /etc/systemd/system/oxymeter.service \\ 
+$ sudo systemctl enable oxymeter.service \\
+$ sudo systemctl daemon-reload \\
+$ sudo reboot now \\
 
 
 ### Usefull commands
