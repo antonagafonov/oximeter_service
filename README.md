@@ -41,6 +41,7 @@ To use the Oxymeter Service, follow these steps:
 ### Device image
 ![Finger Pulse](pictures/finger_pulse.PNG)
 
-### LCD scheme and explanations
+### LCD scheme and explanations (Thanks!!!)
 https://www.rototron.info/lcd-display-tutorial-for-raspberry-pi/
+
 ![LCD scheme](pictures/LCD-Display01.png)
