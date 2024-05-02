@@ -49,15 +49,15 @@ class Deligate(btle.DefaultDelegate):
             # hrv = databytes[14]
             # spo2 = 0
             # pi = 0
-        self.write_lcd(pbm=bpm)
+        self.write_lcd(bpm=bpm)
         print("bpm:", bpm)
 
-    def write_lcd(self, pbm='XX'):
+    def write_lcd(self, bpm='XX'):
         """
         Writes the heart rate (HR) value to an LCD display.
 
         Args:
-            pbm (str): Heart rate value (bpm) to be displayed on the LCD. Default is 'XX'.
+            bpm (str): Heart rate value (bpm) to be displayed on the LCD. Default is 'XX'.
 
         Returns:
             None
@@ -75,8 +75,11 @@ class Deligate(btle.DefaultDelegate):
         lcd = Character_LCD_Mono(
             lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7, lcd_columns, lcd_rows
         )
-        time = datetime.datetime.now().strftime('%H:%M')
-        lcd.message = f"     {time}\n   HR: {pbm} bpm"
+        time = datetime.datetime.now().strftime('%H:%M:%S')
+        if bpm==0:
+            lcd.message = f"    {time}\n   No HR data"
+        else:
+            lcd.message = f"    {time}\n   HR: {bpm} bpm"
 
 class OxymeterService:
     """
