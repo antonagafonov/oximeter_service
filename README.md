@@ -39,12 +39,14 @@ $ sudo reboot now
 
 
 ### Usefull commands
-- sudo journalctl -u oxymeter.service
-- sudo systemctl daemon-reload 
-- sudo systemctl status oxymeter.service
-- sudo systemctl restart oxymeter.service
-- sudo nano /etc/systemd/system/oxymeter.service 
-
+```bash
+sudo journalctl -u oxymeter.service
+sudo systemctl daemon-reload 
+sudo systemctl enable oxymeter.service
+sudo systemctl status oxymeter.service
+sudo systemctl restart oxymeter.service
+sudo nano /etc/systemd/system/oxymeter.service
+```
 ### Device image
 ![Finger Pulse](pictures/finger_pulse.PNG)
 
