@@ -15,10 +15,10 @@ https://www.aliexpress.com/item/1005003621450506.html?spm=a2g0o.order_list.order
 ### Handles example
 1. Notification handle = 0x0028 value: 90 02 03 01 5f 40 0e ff 00 00 00 00 00 00 00 00 00 00 00 00 
 2. Notification handle = 0x002e value: 90 02 04 01 04 2f 01 40 01 01 0e 02 01 40 7f 01 04 02 00 00 
-bpm = databytes[5]
-spo2 = databytes[4]
-hrv = databytes[6]
-pi = databytes[7]
+- bpm = databytes[5]
+- spo2 = databytes[4]
+- hrv = databytes[6]
+- pi = databytes[7]
 
 ### Usage
 
