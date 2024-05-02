@@ -1,0 +1,12 @@
+[Unit]
+Description=Oxymeter Service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/bash /home/toon/oxymeter_service/oxymeter_read.sh
+Restart=always
+RestartSec=10s  
+
+[Install]
+WantedBy=multi-user.target
