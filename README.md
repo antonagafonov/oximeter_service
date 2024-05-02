@@ -1,5 +1,5 @@
 ## Oxymeter Service on Raspberry Pi 4
-![Project Image](pictures/IMG_20240502_132456.jpg)
+![Project Image](pictures/IMG_20240502_181233.jpg)
 
 ## Description
 The Oxymeter Service is a software application that reads measurment via btle protocol and monitors the bpm to LCD based on Pulse Oximeter J1.
@@ -25,11 +25,15 @@ https://www.aliexpress.com/item/1005003621450506.html?spm=a2g0o.order_list.order
 
 To use the Oxymeter Service, follow these steps:
 
-1. pip install -r requirements.txt
-2. mv /home/toon/oxymeter_service/oxymeter.service /etc/systemd/system/oxymeter.service
-3. sudo systemctl enable oxymeter.service
-4. sudo systemctl daemon-reload
-5. sudo reboot now
+$ pip install -r requirements.txt
+$ sudo apt-get install python-pip libglib2.0-dev
+$ sudo pip install bluepy
+$ sudo pip install paho-mqtt
+$ sudo pip install adafruit-circuitpython-charlcd
+$ mv /home/toon/oxymeter_service/oxymeter.service /etc/systemd/system/oxymeter.service
+$ sudo systemctl enable oxymeter.service
+$ sudo systemctl daemon-reload
+$ sudo reboot now
 
 
 ### Usefull commands
