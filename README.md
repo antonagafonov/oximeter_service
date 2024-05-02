@@ -12,7 +12,7 @@ https://www.aliexpress.com/item/1005003621450506.html?spm=a2g0o.order_list.order
 
 To use the Oxymeter Service, follow these steps:
 
-1. Install the required dependencies 
+1. pip install -r requirements.txt
 2. mv /home/toon/oxymeter_service/oxymeter.service /etc/systemd/system/oxymeter.service
 3. sudo systemctl enable oxymeter.service
 4. sudo systemctl daemon-reload
@@ -26,4 +26,3 @@ sudo systemctl status oxymeter.service
 sudo systemctl restart oxymeter.service
 sudo nano /etc/systemd/system/oxymeter.service 
 
-For detailed documentation and API reference, please refer to the [User Guide](./docs/user-guide.md).
