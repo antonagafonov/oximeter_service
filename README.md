@@ -2,7 +2,8 @@
 ![Project Image](pictures/IMG_20240502_132456.jpg)
 
 ## Description
-The Oxymeter Service is a software application that reads measurment via ble and monitors to LCD the bpm based on Pulse Oximeter J1.
+The Oxymeter Service is a software application that reads measurment via btle protocol and monitors the bpm to LCD based on Pulse Oximeter J1.
+Prototype made for Ice Bath personal performance monitoring. 
 
 ## Device link
 https://www.aliexpress.com/item/1005003621450506.html?spm=a2g0o.order_list.order_list_main.156.2be918020vp5ll
