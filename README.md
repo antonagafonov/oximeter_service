@@ -1,6 +1,10 @@
 ## Oxymeter Service on Raspberry Pi 4
 ![Project Image](pictures/IMG_20240502_132456.jpg)
-The Oxymeter Service is a software application that reads measurment via ble and monitors to LCD the bpm based on Pulse Oximeter.
+
+## Description
+The Oxymeter Service is a software application that reads measurment via ble and monitors to LCD the bpm based on Pulse Oximeter J1.
+
+## Device link
 https://www.aliexpress.com/item/1005003621450506.html?spm=a2g0o.order_list.order_list_main.156.2be918020vp5ll
 
 ### Features
@@ -9,8 +13,8 @@ https://www.aliexpress.com/item/1005003621450506.html?spm=a2g0o.order_list.order
 - Other readings can be read from the input string
 
 ### Handles example
-Notification handle = 0x0028 value: 90 02 03 01 5f 40 0e ff 00 00 00 00 00 00 00 00 00 00 00 00 
-Notification handle = 0x002e value: 90 02 04 01 04 2f 01 40 01 01 0e 02 01 40 7f 01 04 02 00 00 
+1. Notification handle = 0x0028 value: 90 02 03 01 5f 40 0e ff 00 00 00 00 00 00 00 00 00 00 00 00 
+2. Notification handle = 0x002e value: 90 02 04 01 04 2f 01 40 01 01 0e 02 01 40 7f 01 04 02 00 00 
 bpm = databytes[5]
 spo2 = databytes[4]
 hrv = databytes[6]
@@ -28,11 +32,11 @@ To use the Oxymeter Service, follow these steps:
 
 
 ### Usefull commands
-1. sudo journalctl -u oxymeter.service
-2. sudo systemctl daemon-reload 
-3. sudo systemctl status oxymeter.service
-4. sudo systemctl restart oxymeter.service
-5. sudo nano /etc/systemd/system/oxymeter.service 
+- sudo journalctl -u oxymeter.service
+- sudo systemctl daemon-reload 
+- sudo systemctl status oxymeter.service
+- sudo systemctl restart oxymeter.service
+- sudo nano /etc/systemd/system/oxymeter.service 
 
 ### Device image
 ![Finger Pulse](pictures/finger_pulse.PNG)
