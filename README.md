@@ -1,4 +1,4 @@
-## Oximeter Service on Raspberry Pi 4
+## Oximeter Service on Raspberry Pi 4 / Zero W2
 ![Project Image](pictures/IMG_20240502_181233.jpg)
 
 ## Description
