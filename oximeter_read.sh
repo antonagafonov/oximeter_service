@@ -2,7 +2,7 @@
 
 # Define file paths
 filename="/home/toon/oxymeter_service/J1_to_lcd.py"
-log_file="/home/toon/oxymeter_service/oxy_service_status.txt"
+log_file="/home/toon/oxymeter_service/oximeterservice_status.txt"
 
 # Function to log messages
 log_message() {

@@ -4,7 +4,7 @@ After=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/bash /home/toon/oxymeter_service/oxymeter_read.sh
+ExecStart=/usr/bin/bash /home/toon/oxymeter_service/oximeter_read.sh
 Restart=always
 RestartSec=10s  
 
